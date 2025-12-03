@@ -19,7 +19,6 @@ for range_str in next(input).split(","):
 
 ranges.sort(key=lambda range: range.left)
 
-total = 0
 found: set[int] = set()
 for seed in range(1, 100000):
     id_str = 2 * str(seed)
@@ -27,7 +26,6 @@ for seed in range(1, 100000):
     while id < 10000000000:
         for range in ranges:
             if range.contains(id) and id not in found:
-                total += id
                 found.add(id)
                 break
         id_str += str(seed)
