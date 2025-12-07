@@ -205,14 +205,6 @@
             "args": [ "<", "${workspaceFolder}/.inputs/day07_test.txt"]
         },
         {
-            "name": "Day 07a : Debug",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${workspaceFolder}/day07a.py",
-            "console": "integratedTerminal",
-            "args": [ "<", "${workspaceFolder}/.inputs/day07_debug.txt"]
-        },
-        {
             "name": "Day 07a",
             "type": "debugpy",
             "request": "launch",
